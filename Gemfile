@@ -13,7 +13,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'devise', '~> 4.6', '>= 4.6.2'
 gem 'paperclip'
-gem 'aws-sdk'
+gem 'aws-sdk','< 2.0'
 
 
 group :development, :test do
