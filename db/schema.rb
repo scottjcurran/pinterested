@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190405161604) do
+ActiveRecord::Schema.define(version: 20190407172844) do
 
   create_table "pins", force: :cascade do |t|
     t.string   "description"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20190405161604) do
     t.datetime "remember_created_at"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
